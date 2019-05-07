@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扫雷</title>
+	<link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+	<div id="mine">
+		<div class="mine-right">
+			<dl id="level">
+				<dt>游戏难度</dt>
+				<dd class="active">
+					<p>简单9x9(10)</p>
+					<input type="hidden" class="fildeHeight" value="9">
+					<input type="hidden" class="fildeWidth" value="9">
+					<input type="hidden" class="fildeNum" value="10">
+				</dd>
+				<dd>
+					<p>中级16x16(40)</p>
+					<input type="hidden" class="fildeHeight" value="16">
+					<input type="hidden" class="fildeWidth" value="16">
+					<input type="hidden" class="fildeNum" value="40">
+				</dd>
+				<dd>
+					<p>高级16x30(99)</p>
+					<input type="hidden" class="fildeHeight" value="16">
+					<input type="hidden" class="fildeWidth" value="30">
+					<input type="hidden" class="fildeNum" value="99">
+				</dd>
+				<dd>
+					<p>自定义</p>
+					<div>
+						<label>
+							<span class="leve-text">高度(9-24)：</span>
+							<input type="number" class="fildeHeight" onblur="checkconfig()">
+						</label>
+					</div>
+					<div>
+						<label>
+							<span class="leve-text">宽度(9-30)：</span>
+							<input type="number" class="fildeWidth" onblur="checkconfig()">
+						</label>
+					</div>
+					<div>
+						<label>
+							<span class="leve-text">雷数(10-668)：</span>
+							<input type="number" class="fildeNum" onblur="checkconfig()">
+						</label>
+					</div>
+				</dd>
+			</dl>
+			<button id="startGame">开始游戏</button>
+		</div>
+		<div class="mine-left">
+			<div class="info clearfix">
+				<div class="fl">当前剩余雷数：<span class="residue">0</span></div>
+				<div class="fr">时间：<span class="time">0</span>秒</div>
+			</div>
+			<ul id="filde" class="filde" onselectstart="return false;">
+				欢迎开始游戏
+			</ul>
+		</div>
+		<!-- <div class="endGameinfo">
+			<p>恭喜你获胜了</p>
+			<button>再玩一局</button>
+			<button>重新开始这个游戏</button>
+			<button>退出</button>
+		</div> -->
+	</div>
+	<script src="src/index.js"></script>
+	<!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="src/reindex.js"></script> -->
+</body>
+</html>

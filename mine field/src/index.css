@@ -1,0 +1,212 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+input[type="number"]{
+	-moz-appearance: textfield;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix::after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+#mine {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: 1px solid #d5d5d5;
+	padding: 10px;
+	position: relative;
+}
+
+.mine-left {
+	width: 931px;
+}
+
+.filde {
+	border-top: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.filde li {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	position: relative;
+	border-right: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	color: #4050BE;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.filde li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.filde .cover::before,
+.filde .flag::before {
+	content: ' ';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	/* background-color: #7bf; */
+	box-shadow: 0 0 0 3px rgba(255,255,255,0.4) inset;
+}
+
+.filde .cover::before {
+	background-color: #7bf;
+}
+
+.filde .cover:hover::before{
+	background-color: #6BA8E5;
+}
+
+.filde .flag::before {
+	background-image: url(flag.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+
+.mine-right {
+	width: 260px;
+	float: right;
+	margin-left: 9px;
+	text-align: center;
+}
+
+.mine-right dt,
+.mine-left .info {
+	height: 40px;
+	line-height: 40px;
+	font-size: 26px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.mine-right dd {
+	width: 80%;
+	margin: 0 auto;
+	line-height: 30px;
+	border: 1px solid #d5d5d5;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.mine-right dd p {
+	padding: 4px 0;
+}
+
+.mine-right dd div {
+	margin-bottom: 10px;
+}
+
+.mine-right dd label {
+	position: relative;
+}
+
+.mine-right .tips {
+	display: none;
+	font-size: 12px;
+	color: #f00;
+}
+
+.info-text {
+	position: absolute;
+	left: 0;
+	top: 33px;
+	background: #f66;
+	z-index: 100;
+}
+
+.info-text::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid #f66;
+}
+
+.leve-text {
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+}
+
+.mine-right dd input {
+	width: 3em;
+	height: 30px;
+	box-sizing: border-box;
+}
+
+.mine-right dd:hover p,
+.mine-right .active p {
+	background: #f66;
+	color: #fff;
+	border-color: #f66;
+}
+
+#startGame {
+	width: 80%;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	background: #f66;
+	margin: 0 auto;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+}
+
+.endGameinfo {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+	margin: 0 auto;
+	width: 400px;
+	padding: 10px 20px;
+	background: #fff;
+	border: 1px solid #d5d5d5;
+}
+.endGameinfo button {
+	background: #f66;
+	color: #fff;
+	border-radius: 8px;
+	border: 0;
+	padding: 4px 8px;
+}
