@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>中国非物质文化遗产交易网</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		$(function(){
+			$(".leftsidebar_box dt").css({"background-color":"#f2eeea"});
+			$(".leftsidebar_box dt img").attr("src","img/select_xl01.png");
+			$(".leftsidebar_box dd").hide();
+			$(".leftsidebar_box dt").click(function(){
+				$(".leftsidebar_box dt").css({"background-color":"#f2eeea"})
+				$(this).css({"background-color": "#eadad5"});
+				$(this).parent().find('dd').removeClass("menu_chioce");
+				$(".leftsidebar_box dt img").attr("src","img/select_xl01.png");
+				$(this).parent().find('img').attr("src","img/select_xl.png");
+				$(".menu_chioce").slideUp(); 
+				$(this).parent().find('dd').slideToggle();
+				$(this).parent().find('dd').addClass("menu_chioce");
+			});
+		})
+		</script>
+	</head>
+	<body>
+		<div class="header-yy">
+			<div class="top">
+				<div class="wrap">
+					<span>您好，欢迎来到中国非物质文化遗产交易网!</span>
+					<dl>
+						<dd>会员登录<i></i></dd>
+						<dd>免费注册<i></i></dd>
+						<dd>客户服务<i></i></dd>
+						<dt><i style="background-position-x: -25px;"></i>设为首页</dt>
+						<dt><i></i>加入收藏</dt>
+					</dl>
+				</div>
+			</div>
+			<div class="logo">
+				<div class="wrap">
+					<img src="img/logo.png" width="396" height="85" style="margin: 13px 17px 0 35px;" class="fl"/>
+					<div class="search fl">
+						<input type="text" name="" id="" value="" placeholder="请输入您要搜索的商品关键字" />
+						<i></i>
+						<input type="submit" name="" id="" value="搜索" />
+						<ul>
+							<li>热门搜索：</li>
+							<li><a href="">刺绣</a></li>
+							<li><a href="">皮影</a></li>
+							<li><a href="">剪纸</a></li>
+							<li><a href="">古玩</a></li>
+							<li><a href="">钱币</a></li>
+							<li><a href="">蜡染画</a></li>
+							<li><a href="">瓷器</a></li>
+							<li><a href="">木雕</a></li>
+							<li><a href="">书法</a></li>
+							<li><a href="">绘画</a></li>
+							<li><a href="">泥塑</a></li>
+						</ul>
+					</div>
+					<img src="img/erweima.png" width="140" height="82" style="margin: 17px 36px 0 0;" class="fr"/>
+				</div>
+			</div>
+		</div>
+		<div class="nav-yy">
+			<div class="wrap">
+				<div class="nav-l fl">
+					<span><i></i>所有商品分类</span>
+					<ul style="display: none;">
+						<li>
+							<h1>民间工艺<i></i></h1>
+							<dl>
+								<dd><a href="">各地刺绣</a></dd>
+								<dd><a href="">小工艺品</a></dd>
+								<dd><a href="">皮影</a></dd>
+								<dd><a href="">香薰</a></dd>
+								<dd><a href="">小工艺饰品</a></dd>
+								<dd><a href="">书签</a></dd>
+								<dd><a href="">木刻版画</a></dd>
+								<dd><a href="">剪纸</a></dd>
+								<dd><a href="">谭木匠</a></dd>
+								<dd><a href="">张小泉</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h1>古玩艺术<i></i></h1>
+							<dl>
+								<dd><a href="">古玩</a></dd>
+								<dd><a href="">古瓷器</a></dd>
+								<dd><a href="">古玉器</a></dd>
+								<dd><a href="">青铜器</a></dd>
+								<dd><a href="">钱币</a></dd>
+								<dd><a href="">古书画</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h1>民族工艺<i></i></h1>
+							<dl>
+								<dd><a href="">蜡染画</a></dd>
+								<dd><a href="">藏银饰品</a></dd>
+								<dd><a href="">民族乐器</a></dd>
+								<dd><a href="">民族刺绣</a></dd>
+								<dd><a href="">唐卡</a></dd>
+								<dd><a href="">民族书画</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h1>传统工艺<i></i></h1>
+							<dl>
+								<dd><a href="">瓷器</a></dd>
+								<dd><a href="">皮影</a></dd>
+								<dd><a href="">龙井</a></dd>
+								<dd><a href="">茶叶</a></dd>
+								<dd><a href="">酿酒</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h1>自然艺术<i></i></h1>
+							<dl>
+								<dd><a href="">土陶</a></dd>
+								<dd><a href="">木雕</a></dd>
+								<dd><a href="">根雕</a></dd>
+								<dd><a href="">玉雕</a></dd>
+								<dd><a href="">石雕</a></dd>
+								<dd><a href="">石头文化</a></dd>
+								<dd><a href="">象牙雕刻</a></dd>
+								<dd><a href="">文玩核桃</a></dd>
+								<dd><a href="">沉香</a></dd>
+								<dd><a href="">菩提</a></dd>
+								<dd><a href="">琥珀制品</a></dd>
+								<dd><a href="">檀木制品</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h1>人文工艺<i></i></h1>
+							<dl>
+								<dd><a href="">书法</a></dd>
+								<dd><a href="">绘画</a></dd>
+								<dd><a href="">笔墨纸砚</a></dd>
+								<dd><a href="">沙画</a></dd>
+								<dd><a href="">水墨</a></dd>
+								<dd><a href="">油画</a></dd>
+								<dd><a href="">摄影</a></dd>
+								<dd><a href="">泥塑</a></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-r fr">
+					<i></i>我的购物车(0)<a href="" class="fr">去结算</a>
+				</div>
+				<ul class="nav-con">
+					<li class="on"><a href="">首页</a></li>
+					<li><a href="">原创手艺</a></li>
+					<li><a href="">传承大师</a></li>
+					<li><a href="">非遗文化</a></li>
+					<li><a href="">优惠促销</a></li>
+					<li><a href="">最新推荐</a></li>
+					<li><a href="">商品定制</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content-yy ny-yy">
+			<div class="bar-bom"></div>
+			
+			<!--内容部分-->
+			<div class="wrap ny-con">
+				<div class="ny-con-l fl">
+					<div class="leftsidebar_box">
+						<div class="line">
+							商品分类 <a href="">全部&gt;&gt;</a>
+						</div>
+						<dl>
+							<dt><img src="img/select_xl01.png">民间艺术</dt>
+							<dd><a href="#"><i></i>各地刺绣</a></dd>
+							<dd><a href="#"><i></i>小工艺品</a></dd>
+							<dd><a href="#"><i></i>皮影</a></dd>
+							<dd><a href="#"><i></i>香 薰</a></dd>
+							<dd><a href="#"><i></i>小工艺饰品</a></dd>
+							<dd><a href="#"><i></i>书 签</a></dd>
+							<dd><a href="#"><i></i>木刻版画</a></dd>
+							<dd><a href="#"><i></i>剪 纸</a></dd>
+							<dd><a href="#"><i></i>谭木匠</a></dd>
+							<dd><a href="#"><i></i>张小泉</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/select_xl01.png">古玩艺术</dt>
+							<dd><a href=""><i></i>古玩</a></dd>
+							<dd><a href=""><i></i>古瓷器</a></dd>
+							<dd><a href=""><i></i>古玉器</a></dd>
+							<dd><a href=""><i></i>青铜器</a></dd>
+							<dd><a href=""><i></i>钱币</a></dd>
+							<dd><a href=""><i></i>古书画</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/select_xl01.png">民族工艺</dt>
+							<dd><a href="#"><i></i>平台运营商管理</a></dd>
+							<dd><a href=""><i></i>蜡染画</a></dd>
+							<dd><a href=""><i></i>藏银饰品</a></dd>
+							<dd><a href=""><i></i>民族乐器</a></dd>
+							<dd><a href=""><i></i>民族刺绣</a></dd>
+							<dd><a href=""><i></i>唐卡</a></dd>
+							<dd><a href=""><i></i>民族书画</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/select_xl01.png">传统工艺</dt>
+							<dd><a href=""><i></i>瓷器</a></dd>
+							<dd><a href=""><i></i>皮影</a></dd>
+							<dd><a href=""><i></i>龙井</a></dd>
+							<dd><a href=""><i></i>茶叶</a></dd>
+							<dd><a href=""><i></i>酿酒</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/select_xl01.png">自然艺术</dt>
+							<dd><a href=""><i></i>土陶</a></dd>
+							<dd><a href=""><i></i>木雕</a></dd>
+							<dd><a href=""><i></i>根雕</a></dd>
+							<dd><a href=""><i></i>玉雕</a></dd>
+							<dd><a href=""><i></i>石雕</a></dd>
+							<dd><a href=""><i></i>石头文化</a></dd>
+							<dd><a href=""><i></i>象牙雕刻</a></dd>
+							<dd><a href=""><i></i>文玩核桃</a></dd>
+							<dd><a href=""><i></i>沉香</a></dd>
+							<dd><a href=""><i></i>菩提</a></dd>
+							<dd><a href=""><i></i>琥珀制品</a></dd>
+							<dd><a href=""><i></i>檀木制品</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/select_xl01.png">人文工艺</dt>
+							<dd><a href=""><i></i>书法</a></dd>
+							<dd><a href=""><i></i>绘画</a></dd>
+							<dd><a href=""><i></i>笔墨纸砚</a></dd>
+							<dd><a href=""><i></i>沙画</a></dd>
+							<dd><a href=""><i></i>水墨</a></dd>
+							<dd><a href=""><i></i>油画</a></dd>
+							<dd><a href=""><i></i>摄影</a></dd>
+							<dd><a href=""><i></i>泥塑</a></dd>
+						</dl>
+					</div>
+					<img src="img/ny_con_l_ad.jpg" width="200" height="409"/>
+				</div>
+				<div class="ny-con-r fr">
+					<h1><span>商品中心-民间工艺</span><em class="fr"><a href="" class="pre disable">上一页</a><a href="" class="next">下一页</a></em></h1>
+					<div class="cp-list">
+						<p class="paixu">排序：<a href="" class="on">销量</a><a href="">价格</a>每页显示：<a href="">8条</a><a href="" class="on">20条</a><a href="">40条</a></p>
+						<ul>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+							<li><a href=""><img src="img/liebiaoimg1.jpg" width="150" height="150"/><span>嵩山木板年画-少林童子功卷轴<b>非物质文化遗产-嵩山木板年画</b></span><p>￥1200.00</p></a></li>
+						</ul>
+						<div class="yema"></div>
+					</div>
+				</div>
+				<div class="clean"></div>
+			</div>
+			<div class="ad2"><img src="img/ad2.jpg" width="1255" height="111"/></div>
+		</div>
+		<div class="footer-yy">
+			<div class="wrap">
+				<ul class="quanyi">
+					<li><img src="img/quanyi1.jpg"/><h6>品质保障</h6>(正规渠道，正品保障)</li>
+					<li><img src="img/quanyi2.jpg"/><h6>特色文化</h6>(名族特色，极致非遗文化)</li>
+					<li><img src="img/quanyi3.jpg"/><h6>大师原创</h6>(潇神湘韵，艺美工精)</li>
+					<li><img src="img/quanyi4.jpg"/><h6>安全无忧</h6>(放心购，七天无理由退货)</li>
+				</ul>
+				<ul class="jydh">
+					<li>
+						<dl>
+							<dt>购物指南</dt>
+							<dd><a href="">购物流程</a></dd>
+							<dd><a href="">会员制度</a></dd>
+							<dd><a href="">积分细则</a></dd>
+							<dd><a href="">常见问题</a></dd>
+							<dd><a href="">联系卖家</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>商家服务</dt>
+							<dd><a href="">招商标准</a></dd>
+							<dd><a href="">资费标准</a></dd>
+							<dd><a href="">商家入驻</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>支付方式</dt>
+							<dd><a href="">网银支付</a></dd>
+							<dd><a href="">支付宝</a></dd>
+							<dd><a href="">微信支付</a></dd>
+							<dd><a href="">账户余额</a></dd>
+							<dd><a href="">货到付款</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>售后服务</dt>
+							<dd><a href="">售后政策</a></dd>
+							<dd><a href="">返修/退换货说明</a></dd>
+							<dd><a href="">退款说明</a></dd>
+							<dd><a href="">发票保障</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>关于我们</dt>
+							<dd><a href="">交易网简介</a></dd>
+							<dd><a href="">帮助中心</a></dd>
+							<dd><a href="">联系我们</a></dd>
+						</dl>
+					</li>
+				</ul>
+				<div class="info-r">
+					<p class="phone"><i></i>4008222218</p>
+					<p class="mail"><i></i>info@jjhvip.com</p>
+					<div>
+						<img src="img/erweima.png" width="120" height="70" class="fl" style="margin-right: 8px;"/>
+						<p>扫一扫 <a href="" class="sina">新浪微博</a></p>
+						<p>关注我们 <a href="" class="qq">腾讯微博</a></p>
+					</div>
+				</div>
+			</div>
+			<p class="clean"><a href="">首页</a>|<a href="">招聘英才</a>|<a href="">合作及洽谈</a>|<a href="">联系我们</a>|<a href="">关于我们</a>|<a href="">友情链接</a></p>
+			<p>Copyright © 2015 中国非物质文化遗产交易网 All rights reserved.</p>
+			<p>地址：中国非物质文化遗产交易网  热线电话: 15595166982   QQ：27234085  该页已被浏览 45897 次</p>
+			<p>ICP正在备案中  网站设计制作：银川天脉网络公司</p>
+			<p style="padding: 10px 0;"><img src="img/wangjing.png"/></p>
+		</div>
+	</body>
+</html>
