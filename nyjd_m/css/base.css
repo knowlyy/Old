@@ -1,0 +1,511 @@
+@charset "utf-8";
+/*! normalize.css v2.0.1 | MIT License | [git][4].io/normalize */
+ 
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+ 
+    /* 更正IE 8/9中未定义的‘block’元素显示。*/
+ 
+    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
+        display: block;
+    }
+ 
+    /*更正IE 8/9中未定义的‘inline-block’元素显示*/
+ 
+    audio,canvas,video {
+        display: inline-block;
+    }
+ 
+    /*
+ * 防止现代浏览器将没有controls属性的的‘audio’元素显示出来
+ * 移除 iOS 5 设备中多余的高度
+ */
+ 
+    audio:not([controls]) {
+        display: none;
+        height: 0;
+    }
+ 
+    /*校正IE 8/9中‘hidden’属性不起作用的问题*/
+ 
+    [hidden] {
+        display: none;
+    }
+ 
+    /* ==========================================================================
+   基本
+   ========================================================================== */
+ 
+    /*
+ * 1. 将默认字体设置为 sans-serif
+ * 2. 在不禁止用户缩放的情况下避免iOS设备方向调整后自动校正字体大小
+ */
+ 
+    html {
+        font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    }
+ 
+    /*
+ * 移除缺省的外边距
+ */
+ 
+    body {
+        margin: 0;
+    }
+ 
+    /* ==========================================================================
+   Links
+   ========================================================================== */
+ 
+    /*
+ * 校正‘outline’在Chrome和其他浏览器间的不一致
+ */
+ 
+    a:focus {
+        outline: thin dotted;
+    }
+ 
+    /*
+ * 增强在所有浏览器中聚焦和鼠标悬停时的可读性
+ */
+ 
+    a:active,
+    a:hover {
+        outline: 0;
+    }
+ 
+    /* ==========================================================================
+   排版
+   ========================================================================== */
+ 
+    /*
+ * 校正 Firefox 4+，Safari 5 和 Chrome 中‘section’和‘article’内的‘h1’字体大小
+ */
+ 
+    h1 {
+        font-size: 2em;
+    }
+ 
+    /*
+ * 校正IE 8/9， Safari 5 和 Chrome中样式不呈现的问题
+ */
+ 
+    abbr[title] {
+        border-bottom: 1px dotted;
+    }
+ 
+    /*
+ * 校正 Firefox 4+， Safari 5 和 Chrome 中‘bolder’的样式
+ */
+ 
+    b,
+    strong {
+        font-weight: bold;
+    }
+ 
+    /*
+ * 校正 Safari 5 和 Chrome 中样式不呈现的问题
+ */
+ 
+    dfn {
+        font-style: italic;
+    }
+ 
+    /*
+ * 校正 IE 8/9 中样式不呈现的问题
+ */
+ 
+    mark {
+        background: #ff0;
+        color: #000;
+    }
+ 
+    /*
+ * 更正 Safari 5 和 Chrome 中奇怪的字体设置
+ */
+ 
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: monospace, serif;
+        font-size: 1em;
+    }
+ 
+    /*
+ * 增强所有浏览器中预格式化文本的可读性
+ */
+ 
+    pre {
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+ 
+    /*
+ * 设置一致的引用类型
+ */
+ 
+    q {
+        quotes: "\201C" "\201D" "\2018" "\2019";
+    }
+ 
+    /*
+ * 校正所有浏览器中易变且不一致的字体大小
+ */
+ 
+    small {
+        font-size: 80%;
+    }
+ 
+    /*
+ * 防止所有浏览器中的‘sub’和‘sup’影响到行高（line-height）
+ */
+ 
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+ 
+    sup {
+        top: -0.5em;
+    }
+ 
+    sub {
+        bottom: -0.25em;
+    }
+ 
+    /* ==========================================================================
+   嵌入内容
+   ========================================================================== */
+ 
+    /*
+ * 移除在 IE 8/9 中嵌入到‘a’元素时的边框
+ */
+ 
+    img {
+        border: 0;
+    }
+ 
+    /*
+ * 更正 IE 9 中奇怪的‘overflow’表现
+ */
+ 
+    svg:not(:root) {
+        overflow: hidden;
+    }
+ 
+    /* ==========================================================================
+   Figures
+   ========================================================================== */
+ 
+    /*
+ * 更正 IE 8/9 和 Safari 5 中外边距不展示的问题
+ */
+ 
+    figure {
+        margin: 0;
+    }
+ 
+    /* ==========================================================================
+   表单
+   ========================================================================== */
+ 
+    /*
+ * 定义一致的边框、外边距和内边距
+ */
+ 
+    fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: 0.35em 0.625em 0.75em;
+    }
+ 
+    /*
+ * 1. 更正 IE 8/9 中颜色不继承的问题
+ * 2. 移除内边距确保人们在将fieldset设置为0时不会大跌眼镜
+ */
+ 
+    legend {
+        border: 0; /* 1 */
+    padding: 0; /* 2 */
+    }
+ 
+    /*
+ * 1. 更正所有浏览器中字体不继承的问题
+ * 2. 更正所有浏览器中字号不继承的问题
+ * 3. 更正 Firefox 4+， Safari 5 和 Chrome 中外边距不同的问题
+ */
+ 
+    button,
+    input,
+    select,
+    textarea {
+        font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+    }
+ 
+    /*
+ * 更正 Firefox 4+ 用户代理样式表（UA stylesheet）中在‘input’上
+ * 设置‘line-height’时使用‘!important’的问题
+ */
+ 
+    button,
+    input {
+        line-height: normal;
+    }
+ 
+    /*
+ * 1. 避免 Android 4.0.* 中的 WebKit bug ，该bug会破坏原生的‘audio
+ *    和‘video’控制器
+ * 2. 更正 iOS 中无法设置可点击的‘input’的问题
+ * 3. 增强图片类型以及其他类型的‘input’中指针的可用性以及样式的一致性
+ */
+ 
+    button,
+    html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    }
+ 
+    /*
+ * 重置disabled元素的默认指针样式
+ */
+ 
+    button[disabled],
+    input[disabled] {
+        cursor: defat;
+    }
+ 
+    /*
+ * 1. 调整 IE 8/9 box sizing 被设置为 ‘content-box’ 的问题
+ * 2. 移除 IE 8/9 中多余的内边距
+ */
+ 
+    input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    }
+ 
+    /*
+ * 1. 校正 Safari 5 和 Chrome 中 ‘appearance’ 被设置为 ‘searchfield’ 的问题
+ * 2. 校正 Safari 5 和 Chrome 中 ‘box-sizing’ 被设置为 `‘border-box’ 的问题
+ * (include `-moz` to future-proof)
+ */
+ 
+    input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+        box-sizing: content-box;
+    }
+ 
+    /*
+ * 移除 OS X 中 Safari 5 和 Chrome 内部的内边距以及搜索框的取消按钮
+ */
+ 
+    input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+ 
+    /*
+ * 移除 Firefox 4+ 内部的内边距
+ */
+ 
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+ 
+    /*
+ * 1. 移除 IE 8/9 中默认的垂直滚动条
+ * 2. 增强所有浏览器中的对对齐以及可读性
+ */
+ 
+    textarea {
+        overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    }
+ 
+    /* ==========================================================================
+   表格
+   ========================================================================== */
+ 
+    /*
+ * 移除单元格间大部分的间距
+ */
+ 
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    ul,ol{
+    	list-style: none;
+    	margin: 0;
+    	padding: 0;
+    }
+    h1,h2,h3,h4,h5,h6{ font-weight: 400;}
+    img{ display: block; float: left; border: 0; width: 100%;}
+    h1,h2,h3,h4,h5,h6,p,dl,dt,dd{ margin: 0; padding: 0;}
+    a{ color: inherit; font-size: inherit; text-decoration: none;}
+    p{line-height: 2em;}
+
+/*Common*/
+.fl{ float: left;}
+.fr{ float: right;}
+.fixed{ position: fixed; top: 0;}
+.clearfix{
+	overflow:auto;
+	_height:1%;
+}
+.btn{ display: block; width: 2rem; height: 0.48rem; line-height: 0.48rem; background: #0066B3; color: #fff; border-radius: 10px; margin: 0 auto; text-align: center; font-weight: 400; text-indent: 0;}
+.center{ text-align: center;}
+
+/*页面样式开始*/
+
+/*头部样式*/
+body{ font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", 黑体, Arial, sans-serif; font-size: 14px;}
+.nav{ width: 100%; border-bottom: 1px solid #d5d5d5; padding: 0 0.1rem; box-sizing: border-box; position: fixed; top: 0;z-index: 999999; background: #fff;}
+.nav > img{ width: 60%; margin-left: 0.2rem;}
+.drawer-hamberger{ z-index: 1101;}
+.drawer-right.drawer-open .drawer-overlay,.drawer-right.drawer-open .drawer-hamberger{ right: 40%;}
+.drawer-right.drawer-open .drawer-hamberger span:before,.drawer-right.drawer-open .drawer-hamberger span:after{ background-color: #fff;}
+.drawer-main{ width: 40%;}
+.drawer-hamberger{ width: 0.35rem; height: 0.35rem;}
+.drawer-nav-title{ color: #fff;}
+
+.banner{ width: 100%; padding-top: 0.9rem;}
+.banner ul{ width: 100%;}
+.banner li{ float: left;}
+.hiSlider-title,.hiSlider-btn-prev,.hiSlider-btn-next{ display: none;}
+
+/*最新推荐样式*/
+.tuijian,.fuwu,.dongtai,.huoban{ padding: 0.15rem 0;}
+.tuijian,.dongtai{ background: #fff;}
+.tuijian-tit span,.fuwu-tit span,.dongtai-tit span,.huoban-tit span,.dingzhi-tit span{ display: block; color: #0066b3; font-size: 30px; text-align: center; padding: 4px 0;}
+.tuijian-tit span.tit-main,.fuwu-tit span.tit-main,.dongtai-tit span.tit-main,.huoban-tit span.tit-main,.dingzhi-tit span.tit-main{ width: 180px; margin: 0 auto; color: #ccc; font-size: 12px; text-align: center; text-transform: uppercase; border-top: 1px solid #d5d5d5;}
+.tuijian .wrap{ margin-top: 0.3rem; overflow: hidden;}
+.tuijian .wrap li{ overflow: hidden; float: left; width: 90%; margin: 0.1rem 5%;}
+
+/*企业服务样式*/
+.fuwu .wrap{ margin: 10px auto;}
+.cloud-tit,.software-tit,.custom-tit{ width: 204px; height: 308px; text-align: center; color: #fff; font-size: 40px; margin-bottom: 10px;}
+.cloud-tit{ background: #93c9f2 url(../images/cloud.png) no-repeat left top; background-size: 100%;}
+.software-tit{ background: #a853f8 url(../images/software.png) no-repeat left top; background-size: 100%;}
+.custom-tit{ background: #16e56e url(../images/custom.png) no-repeat left top; background-size: 100%;}
+.cloud-tit p,.software-tit p,.custom-tit p{ margin-top: 20px;}
+.cloud-tit span,.software-tit span,.custom-tit span{ font-size: 14px; display: block;}
+
+.qiyeyun,.dianshangyun,.hangyeyun{ width: 100%;}
+.qiyeyun p,.dianshangyun p,.hangyeyun p{ text-align: center; height: 56px; line-height: 56px; color: #fff; background: #93c9f2;}
+.qiyeyun ul,.dianshangyun ul,.hangyeyun ul{ background: #fff url(../images/bg_cloud_1.png) no-repeat left bottom; height: 252px; background-size: 595px;}
+.qiyeyun ul li,.dianshangyun ul li,.hangyeyun ul li{ float: left; padding: 4px 8px; border: 1px dashed #d5d5d5; border-radius: 5px; margin: 15px 10px 0;}
+.qiyeyun ul li:hover,.dianshangyun ul li:hover,.hangyeyun ul li:hover div{ border: 1px solid #93c9f2; background: #93c9f2; color: #fff;}
+.dianshangyun ul{ background-position: -332px bottom;}
+.hangyeyun ul{ background: #fff url(../images/bg_cloud_2.png) no-repeat left bottom; background-size: 100%;}
+.hangyeyun ul li{ clear: both; text-align: center; width: auto; margin: 15px auto; position: relative; left: 50%; border: 0;}
+.hangyeyun ul li div{ position: relative; left: -50%;  border: 1px dashed #d5d5d5; border-radius: 5px; padding: 4px 8px;}
+.hangyeyun ul li span{ display: block; font-size: 12px; color: #aaa;}
+.hangyeyun ul li:hover span{ color: #fff;}
+
+.jindei-eas,.jindie-k,.jindie-kis,.jindie-peitao{ width: 50%; height: 307px; float: left; background: #fff;}
+.jindie-tit,.dingzhi-tit{ font-size: 20px; color: #333; padding: 30px 0 0 20px;}
+.jindie-tit span{ display: block; font-size: 14px; color: #999; margin: 15px 0 30px;}
+.jindei-eas ul,.jindie-k ul,.jindie-kis ul,.jindie-peitao ul{ font-size: 18px; color: #666; padding-left: 20px; line-height: 30px;}
+
+.dingzhi-wangzhan,.dingzhi-wx,.dingzhi-app,.dingzhi-shijue{ min-height: 200px; width: 50%; float: left; background: #fff;}
+.dingzhi-wangzhan img,.dingzhi-wx img,.dingzhi-app img,.dingzhi-shijue img{ margin: 10px 0;}
+.dingzhi-wangzhan p,.dingzhi-wx p,.dingzhi-app p,.dingzhi-shijue p{ width: 80%; text-align: center; line-height: 24px; margin: 0 auto; color: #666;}
+
+/*企业动态样式*/
+.dongtai .wrap{ margin-top: 10px; font-size: 18px;}
+.dongtai-l{ position: relative;}
+.dongtai-l-tit{ position: absolute; left: 0; bottom: 0; box-sizing: border-box; width: 100%; padding: 8px; background: rgba(0,0,0,0.5); color: #fff; }
+
+.dom-display .normal{ display:none;}
+.dom-display .current{ display:block;}
+.ui-style-gradient{ width: 100%; overflow:hidden; margin: 0 auto;}
+.tab-hd{ height: 2em; line-height: 2em; border-bottom: 1px solid #d5d5d5; color: #666;}
+.tab-hd-con{ float:left; width: 25%; font-size:20px; text-align:center; cursor:pointer;}
+.tab-hd .current{ color: #0066b3;}
+.tab-bd-con{ display:none; padding: 0 0.1rem; width: 100%; box-sizing: border-box;}
+.tab-bd-con li{ margin: 10px 0 16px; overflow: hidden;}
+.tab-bd-con li:last-child{ margin-bottom: 0;}
+.tab-bd-con li p{ width: 55%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; float: left; margin: 0; line-height: 24px;}
+
+.first-info{ padding: 30px 0; overflow: hidden; border-bottom: 1px solid #d5d5d5;}
+.first-date{ font-size: 14px; color: #666; padding: 0 20px; border-right: 1px solid #d5d5d5; text-align: center;}
+.first-date p{ font-size: 30px; color: #0066b3;}
+.first-info-con{ padding: 0 20px; width: 230px; color: #0066b3;}
+.first-info-con p{ width: 80%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 10px;}
+
+/*合作伙伴样式*/
+.huoban .wrap{ overflow: hidden;}
+.huoban li{ width: 100%; float: left; background-position: center bottom; height: 110px; background-repeat: no-repeat;}
+.huoban li img{ visibility: hidden;}
+.huoban li:hover{ min-width: 50%; background-position: center top;}
+
+.footer{ color: #666; font-size: 12px; text-align: center;}
+.footer-top{ background: #242424; padding: 0.2rem 0;}
+.footer-top img{ width: 50%; margin: 0 25%;}
+.company-info{ font-size: 14px; color: #fff; line-height: 28px;}
+.company-info span{ display: block; color: #666;}
+.footer-bottom{ background: #363636; line-height: 60px;}
+
+/*关于我们*/
+.main{ padding-top: 1rem;}
+.right{ width: 100%;}
+.right p{ text-indent: 2em; margin: 1.5em;}
+
+/*产品样式*/
+#layout-t1.ui-style-gradient{ width: 100%;}
+
+/*案例服务样式*/
+.anli-con{ padding: 20px 0; border-bottom: 1px dashed #d5d5d5; overflow: hidden;}
+.anli-con-l{ width: 100%; overflow: hidden; margin-right: 20px;}
+.anli-con-r{ width: 100%; padding-top: 10px;}
+.anli-con-r h1{ color: #0066b3; font-size: 18px; margin-bottom: 30px; text-align: left;}
+.anli-con-r h2{ color: #93c9f2; font-size: 16px; margin-bottom: 30px;}
+.anli-con-r h2 span{ display: block; text-align: right;}
+.anli-con-r h3{ color: #666; font-size: 14px;}
+.anli-con-r h3 span{ margin: 0 20px;}
+
+/*新闻动态样式*/
+.news-list{ box-sizing: border-box; padding: 0 0.1rem 0.2rem;}
+.news-list li{ overflow: hidden; border-bottom: 1px dashed #d5d5d5; padding: 16px 0;}
+.news-list li span.fl{ display: inline-block; width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/*常见问题样式*/
+.wenti-list li{ overflow: hidden; border-bottom: 1px dashed #d5d5d5; padding: 10px 0;}
+.wenti-list li .wenti-bd{ display: none; color: #999;}
+
+/*云服务样式*/
+.yun-tit{ text-align: center; padding: 30px 0; font-size: 2em;}
+
+/*定制开发*/
+.dingzhi-tit span.tit-main{ width: 100%; border: 0;}
+.dingzhi-img{ height: 250px; overflow: hidden; width: 100%;}
+#layout-t2{ width: 100%; margin: 0 auto;}
+#layout-t2 .tab-hd{ border: 0; margin: 0.2rem 0;}
+#layout-t2 .tab-hd span{ box-sizing: border-box; border-radius: 20px; border: 1px solid #0066b3; border-color: rgba(0,0,0,0);}
+#layout-t2 .tab-hd .current{ color: #0066b3; border: 1px solid #0066b3;}
+#layout-t2 .tab-bd{ overflow: hidden; width: 100%; padding-bottom: 20px;}
+#layout-t2 .tab-bd-con ul{ width: 100%; overflow: hidden;}
+#layout-t2 .tab-bd-con li{ width: 100%; overflow: hidden; margin: 10px 0; border-radius: 5px;}
+#layout-t2 .tab-bd-con li img{ width: 100%;}
+.dingzhi-jianjie{ padding: 15px 10px; background: #fff; box-shadow: 0 3px 6px #eee;}
+.dingzhi-jianjie h3{ margin: 10px 0;}
+.dingzhi-jianjie span{ font-size: 12px; color: #ccc;}
